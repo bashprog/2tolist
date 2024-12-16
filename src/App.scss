@@ -1,0 +1,32 @@
+// Отсюда убираю стандартные отсупы и прочие неприятные стили которые стоят в дефолте
+* {
+  margin: 0;
+  padding: 0;
+}
+//Тут можно увидеть синтаксис SCSS, гораздо проще использовать вложенность и ползать к атрибутам
+a {
+  text-decoration: none;
+  &:visited {
+    color: transparent;
+  }
+}
+
+ul, ol {
+  list-style: none;
+}
+//Закончи убирать
+.mobileContainer {
+  width: 365px;
+  height: 782px;
+  margin: 0 auto;
+  // border: 1px solid red; что бы увидеть контейнер отрисовки то раскомментить рамку
+  border-radius: 50px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
