@@ -1,0 +1,110 @@
+// @import "../../var";
+
+$gray: gray;
+$green: green;
+$brand-color: red;
+
+.desk {
+  width: 100%;
+  border: 1px solid $gray;
+  overflow: hidden;
+}
+
+.addInput {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid $gray;
+  margin-bottom: -1px;
+  input {
+    border-radius: 0;
+    border: 0;
+    //border: 1px solid $gray;
+    width: 85%;
+    height: 36px;
+    font-size: 26px;
+    &:focus {
+      outline: none;
+    }
+  }
+  .add {
+    border-left: 1px solid $gray;
+    width: 15%;
+    height: 38px;
+    cursor: pointer;
+    transition: .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    &.active {
+      color: black;
+      font-size: 24px;
+      &:hover {
+        background: $green;
+      }
+    }
+  }
+}
+
+.item {
+  width: 100%;
+  border-bottom: 1px solid $gray;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  &.done {
+    color: green;
+  }
+  &.canceled {
+    span {
+      text-decoration: line-through;
+      color: gray;
+    }
+    .circle {
+      text-decoration: none;
+      color: $brand-color;
+    }
+  }
+  &:nth-last-child(n) {
+    margin-bottom: -1px;
+  }
+  .checkbox {
+    width: 30px;
+    height: 30px;
+    border-right: 1px solid $gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    .circle {
+      width: 20px;
+      height: 20px;
+      border-radius: 100px;
+      border: 1px solid $gray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+    }
+  }
+  span {
+    margin-left: 10px;
+  }
+  .delete {
+    display: flex;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    border-left: 1px solid $gray;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: .3s;
+    &:hover {
+      color: red;
+    }
+  }
+}

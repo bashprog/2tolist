@@ -1,4 +1,5 @@
 import './App.scss';
+import CardContainer from './containers/CardContainer/CardContainer';
 import phone from './imgs/phone.png'
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
     <div className="centered">
       <img src={phone} width={1030}/>
       <div className='mobileContainer'>
-        pivo pivo
+        <CardContainer />
       </div>
     </div>
   );

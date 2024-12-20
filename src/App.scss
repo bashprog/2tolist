@@ -23,6 +23,9 @@ ul, ol {
   border-radius: 50px;
   position: absolute;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding-top: 90px;
 }
 
 .centered {
