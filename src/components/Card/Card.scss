@@ -6,8 +6,9 @@ $brand-color: red;
 
 .desk {
   width: 100%;
-  border: 1px solid $gray;
-  overflow: hidden;
+  max-width: 259px;
+  // border: 1px solid $gray;
+  // overflow: hidden;
 }
 
 .addInput {
@@ -15,17 +16,17 @@ $brand-color: red;
   display: flex;
   border-bottom: 1px solid $gray;
   margin-bottom: -1px;
-  input {
-    border-radius: 0;
-    border: 0;
-    //border: 1px solid $gray;
-    width: 85%;
-    height: 36px;
-    font-size: 26px;
-    &:focus {
-      outline: none;
-    }
-  }
+  // input {
+  //   border-radius: 0;
+  //   border: 0;
+  //   //border: 1px solid $gray;
+  //   width: 85%;
+  //   height: 36px;
+  //   font-size: 26px;
+  //   &:focus {
+  //     outline: none;
+  //   }
+  // }
   .add {
     border-left: 1px solid $gray;
     width: 15%;
@@ -55,12 +56,12 @@ $brand-color: red;
   box-sizing: border-box;
   justify-content: flex-start;
   &.done {
-    color: green;
+    color: $green;
   }
   &.canceled {
     span {
       text-decoration: line-through;
-      color: gray;
+      color: $gray;
     }
     .circle {
       text-decoration: none;
