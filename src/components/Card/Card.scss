@@ -109,3 +109,14 @@ $brand-color: red;
     }
   }
 }
+
+.deleteIcon {
+  transition: .3s all;
+  &:hover {
+    fill: red;
+  }
+}
+
+.icon {
+  cursor: pointer;
+}
